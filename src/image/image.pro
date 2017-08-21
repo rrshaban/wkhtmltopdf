@@ -23,6 +23,9 @@ DESTDIR = ../../bin
 DEPENDPATH += . ../shared
 INCLUDEPATH += . ../shared
 
+CONFIG += staticlib
+CONFIG += create_prl
+
 unix {
     man.path=$$INSTALLBASE/share/man/man1
     man.extra=LD_LIBRARY_PATH=../../bin/ ../../bin/wkhtmltoimage --manpage | gzip > $(INSTALL_ROOT)$$INSTALLBASE/share/man/man1/wkhtmltoimage.1.gz
