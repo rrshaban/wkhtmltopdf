@@ -17,6 +17,8 @@
 
 TEMPLATE = lib
 CONFIG += dll
+CONFIG += staticlib
+CONFIG += create_prl
 
 include(../../common.pri)
 include(lib.pri)
